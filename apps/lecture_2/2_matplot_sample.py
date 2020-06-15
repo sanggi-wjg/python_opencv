@@ -2,14 +2,14 @@ import cv2 as cv
 import matplotlib.pyplot as plt
 
 # 컬러영상 출력
-img = cv.imread('cat.bmp')
+img = cv.imread('files/cat.bmp')
 imgRGB = cv.cvtColor(img, cv.COLOR_BGR2RGB)
 plt.axis('off')
 plt.imshow(imgRGB)
 plt.show()
 
 # 그레이스케일 영상 출력
-imgGray = cv.imread('cat.bmp', cv.IMREAD_GRAYSCALE)
+imgGray = cv.imread('files/cat.bmp', cv.IMREAD_GRAYSCALE)
 plt.axis('off')
 plt.imshow(imgGray, cmap = 'gray')
 plt.show()

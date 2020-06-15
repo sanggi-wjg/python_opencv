@@ -1,7 +1,6 @@
 import cv2 as cv
-import matplotlib.pyplot as plt
 
-img = cv.imread('cat.bmp')
+img = cv.imread('files/cat.bmp')
 """
 print(type(img))
 print(img.shape)
@@ -16,5 +15,7 @@ cv.namedWindow('Image')
 cv.imshow('Image', img)
 
 while True:
-    if cv.waitKey(0) == 27:
+    if cv.waitKey(1) == 27:
         break
+
+cv.destroyAllWindows()
